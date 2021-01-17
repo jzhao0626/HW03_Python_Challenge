@@ -42,6 +42,7 @@ with open(csvpath) as csvfile:
     fh.write(f'Total Votes: {count}' + '\n')
     fh.write("----------------------------" + '\n')
 
+    # Finding the winner by looping through the dictionary
     for can in cand.keys():
         
         print(f"{can}: {format(round(cand[can] / count * 100), '.3f')}% ({cand[can]})")

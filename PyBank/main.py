@@ -48,6 +48,7 @@ with open(csvpath) as csvfile:
             mini = change
             mini_month = row[0]
 
+    # Adding $ signs in from of all the values
     net = '$' + str(net)
     avg_change = round(change_all / (months - 1), 2)
     avg_change = "$" + str(avg_change)
